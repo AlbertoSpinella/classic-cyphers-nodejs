@@ -3,7 +3,7 @@ export const decrypt = (ciphertext, rot) => {
     let result = "";
     for (const char of adapted) {
         const decimal = char.charCodeAt(0);
-        if (decimal == 32) result += " ";
+        if (decimal < 65 || decimal > 90) result += char;
         else {
             const finalNumber = decimal - rot;
             const rotated = finalNumber >= 65 ? finalNumber : finalNumber + 26;

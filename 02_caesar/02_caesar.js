@@ -4,9 +4,13 @@ const encrypt = (cleartext, rot) => {
     const adapted = cleartext.toUpperCase();
     let result = "";
     for (const char of adapted) {
-        const finalNumber = char.charCodeAt(0) + rot;
-        const rotated = finalNumber <= 90 ? finalNumber : finalNumber % 90 + 64;
-        result += String.fromCharCode(rotated);
+        const decimal = char.charCodeAt(0);
+        if (decimal < 65 || decimal > 90) result += char;
+        else {
+            const finalNumber = decimal + rot;
+            const rotated = finalNumber <= 90 ? finalNumber : finalNumber % 90 + 64;
+            result += String.fromCharCode(rotated);
+        }
     }
     return result;
 };
