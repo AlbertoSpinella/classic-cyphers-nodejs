@@ -1,0 +1,12 @@
+{
+  "name": "classic-cyphers-nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "polibio": "node 01_polibio.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
