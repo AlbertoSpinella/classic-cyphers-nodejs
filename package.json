@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "polibio": "node 01_polibio.js"
+    "polibio": "node ./01_polibio/01_polibio.js",
+    "caesar": "node ./02_caesar/02_caesar.js",
+    "break:caesar": "node ./02_caesar/02_break_caesar.js"
   },
   "keywords": [],
   "author": "",
