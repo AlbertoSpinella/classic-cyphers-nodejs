@@ -1,6 +1,6 @@
 const encrypt = (cleartext, k1, k2) => {
-    if (k1 % 13 == 0 || k2 % 2 == 0)
-        throw new Error("k1 and k2 cannot be divisors of 26");
+    if (k1 % 13 == 0 || k1 % 2 == 0)
+        throw new Error("k1cannot be divisor of 26");
     const adaptedCleartext = cleartext.toUpperCase();
     let result = "";
     for (const char of adaptedCleartext) {
@@ -23,8 +23,8 @@ const calculateOpposite = (k1) => {
 };
 
 const decrypt = (ciphertext, k1, k2) => {
-    if (k1 % 13 == 0 || k2 % 2 == 0)
-        throw new Error("k1 and k2 cannot be divisors of 26");
+    if (k1 % 13 == 0 || k1 % 2 == 0)
+        throw new Error("k1 cannot be divisor of 26");
     const adaptedCiphertext = ciphertext.toUpperCase();
     let result = "";
     for (const char of adaptedCiphertext) {
