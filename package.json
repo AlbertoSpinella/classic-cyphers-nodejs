@@ -11,7 +11,8 @@
     "monoal": "node ./03_monoalphabetic/03_monoalphabetic.js",
     "affine": "node ./04_affine/04_affine.js",
     "break:affine": "node ./04_affine/04_break_affine.js",
-    "porta": "node ./05_porta/05_porta.js"
+    "porta": "node ./05_porta/05_porta.js",
+    "vigenere": "node ./06_vigenere/06_vigenere.js"
   },
   "keywords": [],
   "author": "",

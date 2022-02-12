@@ -11,3 +11,9 @@
 
 ## 04. Affine
  - Key space: `26 * 12` = `312`
+
+## 05. Porta
+ - Key space: `none`
+
+## 06. Vigenere
+ - Key space: `26 ^ n`, where `n` is the length of the key
