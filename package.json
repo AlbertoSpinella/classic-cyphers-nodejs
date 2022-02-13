@@ -12,9 +12,13 @@
     "affine": "node ./04_affine/04_affine.js",
     "break:affine": "node ./04_affine/04_break_affine.js",
     "porta": "node ./05_porta/05_porta.js",
-    "vigenere": "node ./06_vigenere/06_vigenere.js"
+    "vigenere": "node ./06_vigenere/06_vigenere.js",
+    "enigma": "node ./07_enigma/07_enigma.js"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^8.2.0"
+  }
 }
